@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-
 <head>
 	<meta charset="utf-8">
 	<title>Git Website Tutorial</title>
-	<meta name="description" content="">
+	<meta name="description" content="A github.io website tutorial.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="github.io, github, git, website, tutorial, css, html, beginner, Antonius, Torode">
 
 	<meta property="og:title" content="">
 	<meta property="og:type" content="">
@@ -13,84 +13,207 @@
 	<meta property="og:image" content="">
 
 	<link rel="manifest" href="site.webmanifest">
-	<link rel="apple-touch-icon" href="icon.png">
-	<!-- Place favicon.ico in the root directory -->
+	<!-- Favicon information -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Bootstrap CSS -->
+	<!--<link rel="stylesheet" href="css/vendors/bootstrap/bootstrap.min.css">-->
+
+	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/raleway.css">
 
 	<meta name="theme-color" content="#fafafa">
+
+	<style>
+		body, h1, h2, h3, h4, h5 {
+			font-family: "Raleway", sans-serif
+		}
+	</style>
 </head>
 
-<body>
+<body class="w3-light-grey">
 
-<!-- Add your site or application content here -->
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
-	<h1><u>Git Website tutorial</u></h1>
-	<p><i>Created by: Antonius Torode - 1/5/2021</i></p>
+	<!-- Header -->
+	<header class="w3-container w3-center w3-padding-32">
+		<h1><b>Git (github.io) Website Tutorial</b></h1>
+	</header>
 
-	<h2>Creating Your First Website</h2>
-	<p><b>Before beginning:</b> Make sure you have some hot tea or some water nearby. You can be much more productive if you do not have to get up when getting thirsty and also tea is amazing. I typically make a vanilla-almond chai with a little bit of honey which is quite delicious. I make a thermos full and keep my mug half full that way it is always warm. :) I would also recommend some non-distracting music to play in the background. One of my favorites for things like this can be found at this link: <a href="https://www.youtube.com/watch?v=hGIW2fDb0jg">super cool music</a>.</p>
+	<!-- Grid -->
+	<div class="w3-row">
 
-	<p>The first step to making a website is determining how you will host it. The website needs to be running on a computer (server) and available for others to connect to. In general, hosting services have a cost, but I happen to know of a good one that is free (which is what this tutorial uses). The only drawback is that your website code will be public information that anyone can access.</p>
+		<!-- Blog entries -->
+		<div class="w3-col l8 s12">
+			<!-- Blog entry -->
+			<div class="w3-card-4 w3-margin w3-white">
+				<img src="images/helloWorldCover.jpg" alt="helloWorldCover" style="width:100%">
+				<div class="w3-container">
+					<h3><b>Creating Your First Website - Hello World!</b></h3>
+					<h5>Title description, <span class="w3-opacity">January 1, 2021</span></h5>
+				</div>
 
-	<p>Head over to https://github.com/ and proceed to the sign up page. The user name will be the first part of your website URL, so make sure to pick something you like (For example, with a user name of "PotatoWedges", your web page URL will be "potatoWedges.github.io". Create an account using your desired credentials. I would recommend a strong password containing letters (capitalized and lower case), numbers, and symbols that only you know. Anyone with access to your github account will also be able to modify your web page.</p>
+				<div class="w3-container">
+					<p>This article explains the initial steps to creating a basic web page using the github.io
+						interface. It covers setting up a git account and adding an index html file that will display
+						from any browser connected to the internet.</p>
+					<div class="w3-row">
+						<div class="w3-col m8 s12">
+							<p>
+								<a href="helloWorld.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b>
+								</button></a>
+							</p>
+						</div>
+						<div class="w3-col m4 w3-hide-small">
+							<p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
 
-	<p>Sign into your github account and navigate to the homepage (If this is your first account, the page it takes you to after verifying your email). There should be a "Create a repository", "Create repository" or a "new" button (see image below) located either in the middle (newbies) or next to a list of repositories (experienced git humans).</p>
+			<!-- Blog entry -->
+			<div class="w3-card-4 w3-margin w3-white">
+				<!--  <img src="images/bridge.jpg" alt="Norway" style="width:100%">-->
+				<div class="w3-container">
+					<h3><b>Article In Progress...</b></h3>
+					<h5>Title description, <span class="w3-opacity">January, 05, 2021</span></h5>
+				</div>
 
-	<img src="images/createRepo.jpg" alt="createRepo">
+				<div class="w3-container">
+					<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+						euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+						ultricies mi non congue ullam corper. Praesent tincidunt sed
+						tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
+						non fringilla.</p>
+					<div class="w3-row">
+						<div class="w3-col m8 s12">
+							<p>
+								<button class="w3-button w3-padding-large w3-white w3-border w3-disabled"><b>READ MORE »</b>
+								</button>
+							</p>
+						</div>
+						<div class="w3-col m4 w3-hide-small">
+							<p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END BLOG ENTRIES -->
+		</div>
 
-	<p>The repository name (see image below) must be your user name and must end with "github.io". This will ensure it is a static web page that github will host for you (for free!). For example, you can do something like "FishFilet.github.io" if your user name is "FishFilet". The description can be whatever you would like, and you should check the "Add a README file" and "Add .gitignore" check boxes. You can also choose a license if you want to set up what others are allowed to use your website code for.</p>
+		<!-- Introduction menu -->
+		<div class="w3-col l4">
+			<!-- About Card -->
+			<div class="w3-card w3-margin w3-margin-top">
+				<a href="https://torodean.github.io"><img src="images/author.jpg" style="width:100%" alt="author"></a>
+				<div class="w3-container w3-white">
+					<h4><b>About the Author</b></h4>
+					<p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a
+						interest of lorem ipsum and mauris neque quam. I want to share my knowledge with you.</p>
+				</div>
+			</div>
+			<hr>
 
-	<p>A README file is just a general text file that is used to explain to others what is found in this repository. It is not particularly needed for a website, however, it makes setting up the repository easy since there is already a file in the repository.</p>
+			<!--  &lt;!&ndash; Posts &ndash;&gt;-->
+			<!--  <div class="w3-card w3-margin">-->
+			<!--    <div class="w3-container w3-padding">-->
+			<!--      <h4>Popular Posts</h4>-->
+			<!--    </div>-->
+			<!--    <ul class="w3-ul w3-hoverable w3-white">-->
+			<!--      <li class="w3-padding-16">-->
+			<!--        <img src="images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">-->
+			<!--        <span class="w3-large">Lorem</span><br>-->
+			<!--        <span>Sed mattis nunc</span>-->
+			<!--      </li>-->
+			<!--      <li class="w3-padding-16">-->
+			<!--        <img src="images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">-->
+			<!--        <span class="w3-large">Ipsum</span><br>-->
+			<!--        <span>Praes tinci sed</span>-->
+			<!--      </li> -->
+			<!--      <li class="w3-padding-16">-->
+			<!--        <img src="images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">-->
+			<!--        <span class="w3-large">Dorum</span><br>-->
+			<!--        <span>Ultricies congue</span>-->
+			<!--      </li>   -->
+			<!--      <li class="w3-padding-16 w3-hide-medium w3-hide-small">-->
+			<!--        <img src="images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">-->
+			<!--        <span class="w3-large">Mingsum</span><br>-->
+			<!--        <span>Lorem ipsum dipsum</span>-->
+			<!--      </li>  -->
+			<!--    </ul>-->
+			<!--  </div>-->
+			<hr>
 
-	<p>The .gitignore file will tell git which files you do not want to upload to the git server from your local copy of the repository. Select "Jekyll" in the dropdown menu.</p>
+			<!-- Labels / tags -->
+			<div class="w3-card w3-margin">
+				<div class="w3-container w3-padding">
+					<h4>Tags</h4>
+				</div>
+				<div class="w3-container w3-white">
+					<p><span class="w3-tag w3-light-grey w3-margin-bottom">Tutorial</span>
+						<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">HTML</span>
+						<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">CSS</span>
+						<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Beginner</span>
+						<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Git</span>
+						<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">github</span>
+						<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Website</span>
+						<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Webpage</span>
+					</p>
+				</div>
+			</div>
 
-	<p>Select the Create repository button.</p>
+			<!-- END Introduction Menu -->
+		</div>
 
-	<img src="images/createRepoForm.jpg" alt="createRepoForm">
+		<!-- END GRID -->
+	</div>
+	<br>
 
-	<p>Congratulations, you have created a place on the github server for your website to live! And now, time to pour a bit more delicious tea. :)</p>
+	<!-- END w3-content -->
+</div>
 
-	<p>After creating the repository, you should see a link to a nice little Github guide. Reading through this guide will be handy to get an initial grasp of using github and is recommended (As it will be used later). I would suggest opening it in a new tab to look through. Though, there are only really a few basics you 'need' for a website, which I will also cover later.</p>
 
-	<p>Before getting into any of the fancy technical stuff though, let us create out web page in the most simplest way possible. On that same initial page. of your repository (which can be accessed any time by simply clicking on the repository in github), select the "add file" button then "Create new file". Name your file "index.html". This will be the main homepage for your website.</p>
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+	<div class="w3-row">
+		<!-- Links for social media -->
+		<div class="col-xs-12 col-sm-6">
+			<nav class="social-nav">
+				<a href="https://www.facebook.com/antonius.torode" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/awtorode" class="fa fa-twitter"></a>
+				<a href="https://www.linkedin.com/in/antonius-torode/" class="fa fa-linkedin"></a>
+				<a href="https://www.youtube.com/channel/UCEnZovSEZd8BsB2_PJrPkEg" class="fa fa-youtube"></a>
+				<a href="https://www.instagram.com/awtorode/" class="fa fa-instagram"></a>
+				<a href="https://github.com/torodean/" class="fa fa-github"></a>
+			</nav>
+		</div>
+	</div>
 
-	<p>In the "Edit new file" field below (which kind of looks like any ol' text editor), enter the following:</p>
-
-	<code>
-		&lt;!DOCTYPE html><br>
-		&lt;html><br>
-		&ensp;&lt;head><br>
-		&ensp;&ensp;&lt;title> <br>
-		&ensp;&ensp;&ensp;My Amazing Website! <br>
-		&ensp;&ensp;&lt;/title><br>
-		&ensp;&lt;/head><br>
-		&ensp;&lt;body><br>
-		&ensp;&ensp;Behold, the greatest web page known to exist!<br>
-		&ensp;&lt;/body><br>
-		&lt;/html><br>
-	</code>
-
-	<img src="images/createIndex.jpg" alt="createIndex">
-
-	<p>Down below the editor (see image below). You can enter a description of what you are adding to your repository or leave the default alone. Then select "Commit new file". Now, wait a moment (perhaps 30 seconds to drink some tea). Then in a separate browser tab, enter the URL of your website (i.e. DeliciousTea.github.io), and behold! Your website should display.</p>
-
-	<img src="images/pushIndex.jpg" alt="pushIndex">
-
-	<p>Congratulations on creating your first webpage.</p>
-
-<script src="js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-	window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-	ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
+	<!-- Copyright notice -->
+	<div class="w3-row">
+		<p class="copyright">Copyright &copy; 2020 by Antonius Torode</p>
+	</div>
+	<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
 </body>
-
 </html>
