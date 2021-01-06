@@ -1,14 +1,14 @@
 /* Styles for footer. */
 .footer {
     font-family: Helvetica, Arial, sans-serif;
-    color: #c4ae78 !important;
+    color: #372D14 !important;
     padding-top: 4rem;
     padding-bottom: 2rem;
 }
 
 .footer a {
     transition: all 0.33s;
-    color: #c4ae78 !important;
+    color: #372D14 !important;
     text-decoration: none;
 }
 
@@ -78,34 +78,45 @@
     letter-spacing: 0.2rem;
     text-align: center;
     margin-top: 1.75rem;
-    color: #734a32;
+    color: #000000;
     font-size: 140%;
 }
 
 
 /* Styles for social media icons */
 .fa-facebook {
-    color: #c4ae78;
+    color: #000000;
+    text-decoration: none;
 }
 
 .fa-twitter {
-    color: #c4ae78;
+    color: #000000;
+    text-decoration: none;
 }
 
 .fa-google {
-    color: #c4ae78;
+    color: #000000;
+    text-decoration: none;
 }
 
 .fa-linkedin {
-    color: #c4ae78;
+    color: #000000;
+    text-decoration: none;
 }
 
 .fa-youtube {
-    color: #c4ae78;
+    color: #000000;
+    text-decoration: none;
 }
 
 .fa-instagram {
-    color: #c4ae78;
+    color: #000000;
+    text-decoration: none;
+}
+
+.fa-github {
+    color: #000000;
+    text-decoration: none;
 }
 
 /* Styles for containers */
