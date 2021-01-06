@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #000000;
     margin: 20px 0
 }
 
@@ -1492,6 +1492,16 @@ a {
 .w3-grey, .w3-hover-grey:hover, .w3-gray, .w3-hover-gray:hover {
     color: #000 !important;
     background-color: #9e9e9e !important
+}
+
+.w3-wood, .w3-hover-wood:hover {
+    color: #000 !important;
+    background-color: #b3946d !important
+}
+
+.w3-dark-wood, .w3-hover-dark-wood:hover {
+    color: #000 !important;
+    background-color: #876e4e !important
 }
 
 .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {

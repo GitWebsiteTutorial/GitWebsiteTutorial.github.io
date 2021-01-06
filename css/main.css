@@ -153,3 +153,10 @@
 .col-sm-6 {
     float: left
 }
+
+.background-image {
+    background-image: url('../images/background.jpg') !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;"
+}
