@@ -119,6 +119,11 @@
     text-decoration: none;
 }
 
+.fa-github {
+    color: #000000;
+    text-decoration: none;
+}
+
 /* Styles for containers */
 .row {
     margin-left: -15px;

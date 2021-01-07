@@ -59,7 +59,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <h1><b>Git (github.io) Website tutorial</b></h1>
     </header>
 
-    <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-disabled">« Previous</button>
+    <a href="helloWorld.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">« Previous</button></a>
     <a href="index.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Return Home</button></a>
     <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-disabled">Next »</button>
     <hr>
@@ -69,11 +69,47 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-container">
             <!-- START ARTICLE -->
 
-            <h1><u>Git Website tutorial  - TITLE HERE!</u></h1>
+            <h1><u>Git Website tutorial  - Local Git Setup</u></h1>
             <p><i>Written by: <a href="https://torodean.github.io">Antonius Torode</a> - 1/6/2021</i></p>
 
-            <h2>HEADER</h2>
+            <h2>Setting up and understanding Git</h2>
 
+            <hr>
+            <h3>What is git and why do we need it?</h3>
+            <p>As stated on their website, "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency." Git allows you to take files you are working on, have multiple versions, revert to older versions, manage current versions, and keep consistent files across all of your workspaces and machines. For the purposes of our need, git is easily integrated to use with github, and allows us to update a github.io webpage with ease! You can visit the git website to learn more about it and view documentation and more here: <a href="https://git-scm.com/">https://git-scm.com/</a></p>
+            <p>This page is set up in parts for various operating systems. When following this tutorial, ensure that you are looking at the sections with the heading of the operating system you are using (i.e. Linux, Windows, Mac, etc).</p>
+
+            <hr>
+            <h3>How to install git</h3>
+            <h4><i class="w3-padding-small fa fa-windows w3-large" aria-hidden="true"></i><i>For Windows</i></h4>
+            <p>Head over the the git homepage located at <a href="https://git-scm.com/">https://git-scm.com/</a>. Press the "Download for Windows" button.</p>
+            <img src="images/downloadGit.jpg" alt="downloadGit">
+            <p>A download window will appear. Select "Save File".</p>
+            <img src="images/downloadingGit.jpg" alt="downloadGit">
+            <p>Run the executable that appears and follow through the setup windows. You can leave all options as they are by default or change them if desired. Once this completes, that is it, you now have git installed on your computer!</p>
+            <img src="images/gitInstall.png" alt="downloadGit">
+            <p>Congratulations, you have successfully installed git on Windows (assuming you followed all above steps)!</p>
+
+            <h4><i class="w3-padding-small fa fa-linux w3-large" aria-hidden="true"></i><i>For Linux</i></h4>
+            <p>Open a terminal window and enter the following commands (pressing enter after each one to run it).</p>
+            <p><code>
+                $ sudo apt-get update<br>
+                $ sudo apt-get install git
+            </code></p>
+            <p>Verify that git is installed by checking to see if it can tell you the git version number with the following command.</p>
+            <p><code>
+                $ git --version
+            </code></p>
+            <p>Configure your git username and email using the following commands. Fill in your actual username and email in the below commands accordingly.</p>
+            <p><code>
+                $ git config --global user.name "Username"<br>
+                $ git config --global user.email "email@domain.com"
+            </code></p>
+            <p>Congratulations, you have successfully installed git on Linux (assuming you followed all above steps)!</p>
+
+            <hr>
+            <h3>How to use git</h3>
+            <h4><i class="w3-padding-small fa fa-windows w3-large" aria-hidden="true"></i><i>For Windows</i></h4>
 
             <!-- END ARTICLE -->
 
@@ -84,7 +120,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
 
     <hr>
-    <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-disabled">« Previous</button>
+    <a href="helloWorld.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">« Previous</button></a>
     <a href="index.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Return Home</button></a>
     <button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-disabled">Next »</button>
     <!-- END w3-content -->
