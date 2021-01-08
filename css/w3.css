@@ -93,7 +93,8 @@ figure {
 }
 
 img {
-    border-style: none
+    border-style: none;
+    max-width: 100%;
 }
 
 code, kbd, pre, samp {
@@ -1492,6 +1493,11 @@ a {
 .w3-grey, .w3-hover-grey:hover, .w3-gray, .w3-hover-gray:hover {
     color: #000 !important;
     background-color: #9e9e9e !important
+}
+
+.w3-light-wood, .w3-hover-light-wood:hover {
+    color: #000 !important;
+    background-color: #FDDDB9 !important
 }
 
 .w3-wood, .w3-hover-wood:hover {

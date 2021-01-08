@@ -124,6 +124,20 @@
     text-decoration: none;
 }
 
+.fa-windows {
+    color: #000000;
+    text-decoration: none;
+}
+
+.fa-apple {
+    color: #000000;
+    text-decoration: none;
+}
+.fa-pencil-alt {
+    color: #000000;
+    text-decoration: none;
+}
+
 /* Styles for containers */
 .row {
     margin-left: -15px;
@@ -175,4 +189,17 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;"
+}
+
+.list-item {
+    display: block;
+}
+
+.list-item:hover {
+    background-color: #FDDDB9 !important;
+}
+
+.list-item a {
+    text-decoration: none;
+    display: block;
 }

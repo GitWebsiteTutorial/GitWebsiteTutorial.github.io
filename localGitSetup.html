@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="fonts/raleway.css">
 
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <meta name="theme-color" content="#fafafa">
 
@@ -68,20 +68,26 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-row w3-white w3-transparent">
         <div class="w3-container">
             <!-- START ARTICLE -->
+            <h1><i class="w3-padding-small fas fa-pencil-alt w3-xlarge" aria-hidden="true"></i><b>...Article Unfinished...</b><i class="w3-padding-small fas fa-pencil-alt w3-xlarge" aria-hidden="true"></i></h1>
+            <h1><u>Git Website Tutorial  - Local Git Setup</u></h1>
+            <p><i>Written by: <a href="https://torodean.github.io">Antonius Torode</a> - 1/8/2021</i></p>
 
-            <h1><u>Git Website tutorial  - Local Git Setup</u></h1>
-            <p><i>Written by: <a href="https://torodean.github.io">Antonius Torode</a> - 1/6/2021</i></p>
 
-            <h2>Setting up and understanding Git</h2>
+            <h2>Setting Up And Understanding Git</h2>
+            <p><i><b>Before beginning:</b> Make sure you have a healthy snack! A bowl of some fresh nuts or cut up vegetables is great to have while working. That way you can stay focused and the urge of hunger does not creep up on you. That, and healthy snacks can help you think and concentrate! I would also recommend some non-distracting music to play in the background. One of my favorites for things like this can be found at this link: <a href="https://www.youtube.com/watch?v=EWD8JhDlZ1s">super cool coding music</a> (the music changes for each article!).</i></p>
 
             <hr>
-            <h3>What is git and why do we need it?</h3>
-            <p>As stated on their website, "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency." Git allows you to take files you are working on, have multiple versions, revert to older versions, manage current versions, and keep consistent files across all of your workspaces and machines. For the purposes of our need, git is easily integrated to use with github, and allows us to update a github.io webpage with ease! You can visit the git website to learn more about it and view documentation and more here: <a href="https://git-scm.com/">https://git-scm.com/</a></p>
-            <p>This page is set up in parts for various operating systems. When following this tutorial, ensure that you are looking at the sections with the heading of the operating system you are using (i.e. Linux, Windows, Mac, etc).</p>
+            <h3>What is git and why do we need it locally?</h3>
+            <p>In the last tutorial, we covered setting up an account on github to manage and store your files. You technically can simple stick to using that method, updating through the website, and even dragging and dropping new files to upload them directly. Although possible, I believe (once set up) that being able to work locally on your computer is significantly more productive and allows you to have much more control and power over what you are creating. For this purpose, this page will walk through the steps of setting up git locally so you can use the tools you desire for creating your website (such as CLion, Dreamweaver, Notepad++, etc) easily. You will essentially have all the files on your computer, and when you are happy with them, then you can push them to the github server for the public to see.
+            </p>
+            <p>As stated on their website, "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency." Git allows you to take files you are working on, have multiple versions, revert to older versions, manage current versions, and keep consistent files across all of your workspaces and machines. For the purposes of our need, git is easily integrated to use with github, and allows us to update a github.io webpage with ease! You can visit the git website to learn more about it, view documentation, and more on the official git website <a href="https://git-scm.com/">https://git-scm.com/</a>. Git is a powerful industry tool that is capable of many things. Although at times it can seem overwhelming or challenging, it is very simple to use for the purposes I will outline. Do not be overwhelmed.
+            </p>
+            <p>This page is set up in parts for various operating systems. When following this tutorial, ensure that you are looking at the sections with the heading of the operating system you are using (i.e. Linux, Windows, Mac, etc).
+            </p>
 
             <hr>
             <h3>How to install git</h3>
-            <h4><i class="w3-padding-small fa fa-windows w3-large" aria-hidden="true"></i><i>For Windows</i></h4>
+            <h4><i class="w3-padding-small fab fa-windows w3-large" aria-hidden="true"></i><i>For Windows</i></h4>
             <p>Head over the the git homepage located at <a href="https://git-scm.com/">https://git-scm.com/</a>. Press the "Download for Windows" button.</p>
             <img src="images/downloadGit.jpg" alt="downloadGit">
             <p>A download window will appear. Select "Save File".</p>
@@ -90,7 +96,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             <img src="images/gitInstall.png" alt="downloadGit">
             <p>Congratulations, you have successfully installed git on Windows (assuming you followed all above steps)!</p>
 
-            <h4><i class="w3-padding-small fa fa-linux w3-large" aria-hidden="true"></i><i>For Linux</i></h4>
+            <h4><i class="w3-padding-small fab fa-linux w3-large" aria-hidden="true"></i><i>For Linux</i></h4>
             <p>Open a terminal window and enter the following commands (pressing enter after each one to run it).</p>
             <p><code>
                 $ sudo apt-get update<br>
@@ -107,10 +113,44 @@ and is wrapped around the whole page content, except for the footer in this exam
             </code></p>
             <p>Congratulations, you have successfully installed git on Linux (assuming you followed all above steps)!</p>
 
-            <hr>
-            <h3>How to use git</h3>
-            <h4><i class="w3-padding-small fa fa-windows w3-large" aria-hidden="true"></i><i>For Windows</i></h4>
+            <h4><i class="w3-padding-small fab fa-apple w3-large" aria-hidden="true"></i><i>For Mac</i></h4>
+            <p>If you have a Mac, you can install git using the steps on the following page. I do not own or have access to a Mac and can therefore not provide a sufficient tutorial write up on the process. <a href="https://git-scm.com/download/mac">https://git-scm.com/download/mac</a></p>
 
+            <hr>
+            <h3>Setting up a git GUI - SourceTree</h3>
+            <h4><i class="w3-padding-small fab fa-windows w3-large" aria-hidden="true"></i><i class="w3-padding-small fab fa-apple w3-large" aria-hidden="true"></i><i>For Windows and Mac</i></h4>
+
+            <p>There are many different ways to use git. These range from using terminal commands, using a GUI client, or using an IDA that supports version control integration (such as CLion). Personally (when using Windows) I use git through the Cygwin terminal (a large collection of tools which provide functionality similar to a Linux distribution on Windows) and through integration with CLion (A Cross-Platform IDE for C and C++ by JetBrains which contains support for HTML, python, Javascript, and other languages/scripts). Both of which are completely free for open source projects (which a github.io site typically is). The way you use git is largely dependant on the other programs and system you use, however for the purpose of this tutorial, we will cover using <a href="https://www.sourcetreeapp.com/">Sourcetree</a> (a free Git GUI client that works on both Windows or Mac). If you want to use a different method, feel free to do so, though this page may not help you much.</p>
+            <p>First, head over to <a href="https://www.sourcetreeapp.com/">https://www.sourcetreeapp.com/</a>, download Sourcetree, and then install Sourcetree. You will need to create a Bitbucket account in order to use Sourcetree. This is a free account similar to the github account created in the last tutorial. Upon running the Sourcetree installer, you will need to link your Bitbucket account.</p>
+            <img src="images/bitBucketRegistration.jpg" alt="bitBucketRegistration">
+            <p>Then, uncheck the Mercurial option in the next step and enter your github username and email when asked for name and email, then finish the installation.</p>
+            <p><i>There is also a nice tutorial on setting up Sourcetree on the github website which can be found here if you need more information: </i><a href="https://github.com/gsoft-inc/dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow">https://github.com/gsoft-inc/dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow</a> </p>
+            <p>After installation, the Sourcetree program should open. Under the remote repositories tab, you will need to click "Add an account...". A window will open and then you will need to select Github for the "hosting service", HTTPS for the "preferred protocol". Then, select OAuth for the "Authentication" and press the "Refresh OAuth Token" button. A browser will open Github and it will ask if you would like to allow this app to be authorize. Press "Authorize atlassian". Then, a green checkmark icon and an "Authentication OK" message will appear in your Sourcetree window (as shown in the image below).</p>
+            <img src="images/bitBucketAddAccount.jpg" alt="bitBucketAddAccount">
+            <p>Your Github repository should onw appear in the remove repositories list. Select in and start to type the name of your repository in the search bar. It should appear. Select your repository and press the small "clone" button in the bottom right hand corner.</p>
+            <img src="images/bitBucketAddRepo.jpg" alt="bitBucketAddRepo">
+            <p>A window will appear that allows you to edit the information for this repository. The first box is the address of the repository, which should be automatically filled in correctly for you. The second box is the folder on your computer that you want the files to get copied to. This should end if your complete repository name, which will be the folder the files will be placed into (see image below). You can ignore any advanced options if you are a beginner.</p>
+            <img src="images/bitBucketCloneRepo.jpg" alt="bitBucketCloneRepo">
+            <p>Finally, click clone. Once finished cloning, you should see all of the files from your repository on github appear in the folder you entered in the previous steps. You should be able ot see your history of things you have committed as well, including adding our index.html file if you followed the steps in the previous article. An example of what it should look like can be seen in the image below.</p>
+            <img src="images/sourceTreeRepoView.jpg" alt="sourceTreeRepoView">
+            <p>Congratulations,you have completed setting up SourceTree for use (assuming you followed the above steps)! Now we will discuss the basics of how to use SourceTree.</p>
+            <h4><i class="w3-padding-small fab fa-linux w3-large" aria-hidden="true"></i><i>For Linux</i></h4>
+            <p>Sourcetree does support the Linux operating system. I have never used a git gui for Linux either other than integration through CLion. Typically, linux users are familiar with basic terminal usage and thus should be okay with using at least the basic commands for git through a terminal. I will explain some of these commands in the next section.</p>
+
+            <hr>
+            <h3>Using git to update our website files</h3>
+            <p>The basic principles of git are as follows.</p>
+            <ul>
+                <li>Pull: A pull is when you pull all changes from the server (github) to your local repository (your computer).</li>
+                <li>Commit: A commit is a group of changes that the user has committed to. Commits are typically accompanied by a message explaining what was changed (the user will decide what the message says).</li>
+                <li>Push: A push is when the user pushes all committed changes from the local repository (your computer) to the server (github).</li>
+                <li>Staging area: This is a container where git collects all changes that will be part of the next commit.</li>
+            </ul>
+
+            <h4><i class="w3-padding-small fab fa-windows w3-large" aria-hidden="true"></i><i class="w3-padding-small fab fa-apple w3-large" aria-hidden="true"></i><i>For Windows and Mac</i></h4>
+            <p></p>
+
+            <h1><i class="w3-padding-small fas fa-pencil-alt w3-xlarge" aria-hidden="true"></i><b>...Article Unfinished...</b><i class="w3-padding-small fas fa-pencil-alt w3-xlarge" aria-hidden="true"></i></h1>
             <!-- END ARTICLE -->
 
             <!-- END CONTAINER -->
@@ -126,9 +166,8 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- END w3-content -->
 </div>
 
-
-<!-- Footer -->
-<footer class="w3-container w3-light-grey w3-padding-32 w3-margin-top">
+<!-- ============== BEGIN FOOTER - PYTHON ENCODED =============== -->
+<footer class="w3-container w3-light-wood w3-padding-32 w3-margin-top">
     <div class="w3-row">
         <!-- Copyright notice -->
         <div class="w3-col s6">
@@ -143,16 +182,17 @@ and is wrapped around the whole page content, except for the footer in this exam
         <!-- Links for social media -->
         <div class="w3-right-align">
             <nav class="social-nav w3-padding w3-xlarge">
-                <a href="https://www.facebook.com/antonius.torode" class="w3-padding-small fa fa-facebook"></a>
-                <a href="https://twitter.com/awtorode" class="w3-padding-small fa fa-twitter"></a>
-                <a href="https://www.linkedin.com/in/antonius-torode/" class="w3-padding-small fa fa-linkedin"></a>
-                <a href="https://www.youtube.com/channel/UCEnZovSEZd8BsB2_PJrPkEg" class="w3-padding-small fa fa-youtube"></a>
-                <a href="https://www.instagram.com/awtorode/" class="w3-padding-small fa fa-instagram"></a>
-                <a href="https://github.com/GitWebsiteTutorial/GitWebsiteTutorial.github.io" class="w3-padding-small fa fa-github"></a>
+                <a href="https://www.facebook.com/antonius.torode" class="w3-padding-small fab fa-facebook"></a>
+                <a href="https://twitter.com/awtorode" class="w3-padding-small fab fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/antonius-torode/" class="w3-padding-small fab fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCEnZovSEZd8BsB2_PJrPkEg" class="w3-padding-small fab fa-youtube"></a>
+                <a href="https://www.instagram.com/awtorode/" class="w3-padding-small fab fa-instagram"></a>
+                <a href="https://github.com/GitWebsiteTutorial/GitWebsiteTutorial.github.io" class="w3-padding-small fab fa-github"></a>
             </nav>
         </div>
     </div>
 </footer>
+<!-- ============== END FOOTER - PYTHON ENCODED =============== -->
 
 </body>
 </html>
