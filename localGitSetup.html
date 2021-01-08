@@ -151,7 +151,17 @@ and is wrapped around the whole page content, except for the footer in this exam
             <img src="images/sourceTreeCommit.jpg" alt="sourceTreeCommit">
             <p>After committing changes, the "Push" button will show that it has pushes it can send to the server.Press the push button. It should prompt you for your github username and password. Enter these and then click push. If everything works, it will return to the main window. If an error occurs, you may have to fiddle with the settings in Tools > Authentication to get it to work.</p>
             <img src="images/sourceTreePush.jpg" alt="sourceTreePush">
-            <p>Assuming all worked properly, congratulations, you now have all the tools necessary to edit and then update your live website!</p>
+            <p>Assuming all worked properly, congratulations, you now have all the tools necessary to edit files in your repository and then update your live website!</p>
+
+            <h4><i class="w3-padding-small fab fa-linux w3-large" aria-hidden="true"></i><i>For Linux</i></h4>
+            <p>This will cover how to push changes from your repository via command line (terminal). Open a terminal window and navigate to the project repository. After making a change, you can utilize the following commands.</p>
+            <ul>
+                <li><code class="w3-light-wood">git status</code> - to display all the files that have changed.</li>
+                <li><code class="w3-light-wood">git add -A</code> - This will add all files to the staging area. If you don't use "-A", you can specify only desired files.</li>
+                <li><code class="w3-light-wood">git commit -m "message"</code> - This will commit the staged files with the commit message specified in the quotation marks.</li>
+                <li><code class="w3-light-wood">git push</code> - This will push all committed changes to the server.</li>
+            </ul>
+            <p>That is all it takes to update files from your repository to your website!</p>
             <!-- END ARTICLE -->
 
             <!-- END CONTAINER -->
