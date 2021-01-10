@@ -5,7 +5,7 @@
     <title>Git Website Tutorial</title>
     <meta name="description" content="A github.io website tutorial.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="github.io, github, git, website, tutorial, css, html, beginner, Antonius, Torode">
+    <meta name="keywords" content="github.io, github, git, sourcetree, website, tutorial, css, html, beginner, Antonius, Torode">
 
     <meta property="og:title" content="">
     <meta property="og:type" content="">
@@ -29,9 +29,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Bootstrap CSS -->
-    <!--<link rel="stylesheet" href="css/vendors/bootstrap/bootstrap.min.css">-->
-
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="fonts/raleway.css">
@@ -47,12 +44,18 @@
         }
     </style>
 
+    <!-- BEGIN JAVASCRIPT SNAPSHOTS -->
     <script src="js/vendor/jquery.js"></script>
     <script>
         $(function(){
+            $("#introductionSnapshot").load("snapshots/introduction.html");
+            $("#helloWorldSnapshot").load("snapshots/helloWorld.html");
+            $("#localGitSetupSnapshot").load("snapshots/localGitSetup.html");
+            $("#createFromTemplateSnapshot").load("snapshots/createFromTemplate.html");
             $("#constructionSnapshot").load("snapshots/construction.html");
         });
     </script>
+    <!-- END JAVASCRIPT SNAPSHOTS -->
 </head>
 
 <body class="w3-light-grey background-image" >
@@ -69,118 +72,19 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Grid -->
     <div class="w3-row">
 
-        <!-- Blog entries -->
+        <!-- BEGIN BLOG ENTRIES -->
         <div class="w3-col l8 s12">
-            <!-- Blog entry - Introduction -->
-            <div class="w3-card-4 w3-margin w3-white">
-                <img src="images/introduction/introductionBanner.jpg" alt="templateBanner" style="width:100%">
-                <div class="w3-container">
-                    <h3><b>Introduction And General Information</b></h3>
-                    <h5>Introduction - <span class="w3-opacity">Updated on January 9, 2021</span></h5>
-                </div>
-
-                <div class="w3-container">
-                    <p>This is a simple introduction to the purpose and contents of this website. It also contains useful acronyms and definitions used later.</p>
-                    <div class="w3-row">
-                        <div class="w3-col m8 s12">
-                            <p>
-                                <a href="articles/introduction.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b>
-                                </button></a>
-                            </p>
-                        </div>
-                        <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="introductionSnapshot"></div>
             <hr class="w3-card-4 w3-margin">
-
-            <!-- Blog entry - Hello World -->
-            <div class="w3-card-4 w3-margin w3-white">
-                <img src="images/helloWorld/helloWorldBanner.jpg" alt="helloWorldCover" style="width:100%">
-                <div class="w3-container">
-                    <h3><b>Creating Your First Website</b></h3>
-                    <h5>Hello World! - <span class="w3-opacity">January 5, 2021</span></h5>
-                </div>
-                <div class="w3-container">
-                    <p>This article explains the initial steps to creating a basic web page using the github.io interface. It covers setting up a git account and adding an index html file that will display from any browser connected to the internet.</p>
-                    <div class="w3-row">
-                        <div class="w3-col m8 s12">
-                            <p>
-                                <a href="articles/helloWorld.html">
-                                    <button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b>
-                                    </button>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="helloWorldSnapshot"></div>
             <hr class="w3-card-4 w3-margin">
-
-            <!-- Blog entry - Local git setup -->
-            <div class="w3-card-4 w3-margin w3-white">
-                  <img src="images/localGitSetup/gitBanner.jpg" alt="Norway" style="width:100%">
-                <div class="w3-container">
-                    <h3><b>Setting Up And Understanding Git</b></h3>
-                    <h5>Local Git Setup - <span class="w3-opacity">January, 08, 2021</span></h5>
-                </div>
-
-                <div class="w3-container">
-                    <p>This article covers the basics of setting up git to work on your local machine. It will cover why and how to utilize git to update your website files quick and efficiently as well as provide some basic tools and functionality of git.</p>
-                    <div class="w3-row">
-                        <div class="w3-col m8 s12">
-                            <p>
-                                <a href="articles/localGitSetup.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE
-                                    »</b>
-                                </button></a>
-                            </p>
-                        </div>
-                        <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="localGitSetupSnapshot"></div>
             <hr class="w3-card-4 w3-margin">
-
-            <!-- Blog entry - template -->
-            <div class="w3-card-4 w3-margin w3-white">
-                <img src="images/createFromTemplate/templatesBanner.jpg" alt="templatesBanner" style="width:100%">
-                <div class="w3-container">
-                    <h3><b>Creating A Website From A Template</b></h3>
-                    <h5>Templates! - <span class="w3-opacity">January, 09, 2021</span></h5>
-                </div>
-
-                <div class="w3-container">
-                    <p>This article covers how to create a website from a website template file. Often, re-inventing the wheel by making all your code from scratch can be time consuming and not necessarily as good. Sometimes using template code can bring the results you want!</p>
-                    <div class="w3-row">
-                        <div class="w3-col m8 s12">
-                            <p>
-                                <a href="articles/createFromTemplate.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b>
-                                </button></a>
-                            </p>
-                        </div>
-                        <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">0</span></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="createFromTemplateSnapshot"></div>
             <hr class="w3-card-4 w3-margin">
-
             <div id="constructionSnapshot"></div>
-
-            <!-- END BLOG ENTRIES -->
         </div>
+        <!-- END BLOG ENTRIES -->
 
         <!-- Introduction menu -->
         <div class="w3-col l4">
