@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
 <head>
+    <!-- BEGIN HEAD CONTENT -->
     <meta charset="utf-8">
     <title>Git Website Tutorial</title>
     <meta name="description" content="A github.io website tutorial.">
@@ -43,6 +44,7 @@
             font-family: "Raleway", sans-serif
         }
     </style>
+    <!-- END HEAD CONTENT -->
 
     <!-- BEGIN JAVASCRIPT SNAPSHOTS -->
     <script src="js/vendor/jquery.js"></script>
@@ -53,6 +55,10 @@
             $("#localGitSetupSnapshot").load("snapshots/localGitSetup.html");
             $("#createFromTemplateSnapshot").load("snapshots/createFromTemplate.html");
             $("#constructionSnapshot").load("snapshots/construction.html");
+            $("#aboutAuthorSnapshot").load("snapshots/aboutAuthor.html");
+            $("#recentPostsSnapshot").load("snapshots/recentPosts.html");
+            $("#tagsSnapshot").load("snapshots/tags.html");
+            $("#footerSnapshot").load("elements/footer.html");
         });
     </script>
     <!-- END JAVASCRIPT SNAPSHOTS -->
@@ -60,8 +66,6 @@
 
 <body class="w3-light-grey background-image" >
 
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-content" style="max-width:1400px">
 
     <!-- Header -->
@@ -69,7 +73,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <h1><b>Git (github.io) Website Tutorial</b></h1>
     </header>
 
-    <!-- Grid -->
+    <!-- BEGIN GRID -->
     <div class="w3-row">
 
         <!-- BEGIN BLOG ENTRIES -->
@@ -86,129 +90,22 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
         <!-- END BLOG ENTRIES -->
 
-        <!-- Introduction menu -->
+        <!-- BEGIN SIDE MENU -->
         <div class="w3-col l4">
-            <!-- About Author Card -->
-            <div class="w3-card w3-margin w3-margin-top">
-                <a href="https://torodean.github.io"><img src="images/author.jpg" style="width:100%" alt="author"></a>
-                <div class="w3-container w3-white">
-                    <h4><b>About the Author</b></h4>
-                    <p>Just me, myself and I, exploring the vast universe of uknownment. Fulfilling boredom with the continual pursuit of new projects. I have a heart of love and a interest of lorem ipsum and mauris neque quam. I want to share my knowledge with you. Please consider donating to support this page and its development.</p>
-                    <a href="https://torodean.github.io/"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Authors homepage</button></a>
-                    <a href="https://www.paypal.me/AntoniusTorode"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Support This Page!</button></a>
-                </div>
-            </div>
-
-            <!-- Recent Posts -->
-            <div class="w3-card w3-margin">
-                <div class="w3-container w3-padding w3-wood">
-                    <h4><b>Recent Posts</b></h4>
-                </div>
-                <ul class="w3-ul w3-hoverable w3-white">
-
-                    <li class="list-item w3-padding-16">
-                        <a href="">
-                            <img src="images/template/loading.png" alt="loading" class="w3-left w3-margin-right"
-                                 style="width:50px">
-                            <span class="w3-large"><u>New Article In Progress...</u></span><br>
-                            <span>lorem ipsum - January 13, 2021</span>
-                        </a>
-                    </li>
-                    <li class="list-item w3-padding-16">
-                        <a href="articles/introduction.html">
-                            <img src="images/introduction/introductionIcon.png" alt="loading" class="w3-left w3-margin-right"
-                                 style="width:50px">
-                            <span class="w3-large"><u>Introduction And General Information</u></span><br>
-                            <span>Introduction - January 9, 2021</span>
-                        </a>
-                    </li>
-                    <li class="list-item w3-padding-16">
-                        <a href="articles/createFromTemplate.html">
-                            <img src="images/createFromTemplate/templateIcon.png" alt="gitIcon" class="w3-left w3-margin-right"
-                                 style="width:50px">
-                            <span class="w3-large"><u>Creating A Website From A Template</u></span><br>
-                            <span>Templates! - January 9, 2021</span>
-                        </a>
-                    </li>
-                    <li class="list-item w3-padding-16">
-                        <a href="articles/localGitSetup.html">
-                            <img src="images/localGitSetup/gitIcon.png" alt="gitIcon" class="w3-left w3-margin-right"
-                                 style="width:50px">
-                            <span class="w3-large"><u>Setting Up And Understanding Git</u></span><br>
-                            <span>Local Git Setup - January 8, 2021</span>
-                        </a>
-                    </li>
-                    <li class="list-item w3-padding-16">
-                        <a href="articles/helloWorld.html">
-                            <img src="images/helloWorld/helloWorldIcon.png" alt="helloWorldCover-small" class="w3-left w3-margin-right"
-                                 style="width:50px">
-                            <span class="w3-large"><u>Creating Your First Website</u></span><br>
-                            <span>Hello World! - January 5, 2021</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Labels / tags -->
-            <div class="w3-card w3-margin">
-                <div class="w3-container w3-padding w3-wood">
-                    <h4><b>Tags</b></h4>
-                </div>
-                <div class="w3-container w3-white">
-                    <p>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">Tutorial</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">HTML</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">CSS</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">Beginner</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">Git</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">Github</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">Website</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">Webpage</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">Python</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">Javascript</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-hover-light-wood">Sourcetree</span>
-                    </p>
-                </div>
-            </div>
-
-            <!-- END Introduction Menu -->
+            <div id="aboutAuthorSnapshot"></div>
+            <div id="recentPostsSnapshot"></div>
+            <div id="tagsSnapshot"></div>
         </div>
+        <!-- BEGIN SIDE MENU -->
 
-        <!-- END GRID -->
     </div>
+    <!-- END GRID -->
+
     <br>
-
-    <!-- END w3-content -->
 </div>
+<!-- END w3-content -->
 
-<!-- ============== BEGIN FOOTER - PYTHON ENCODED =============== -->
-<footer class="w3-container w3-light-wood w3-padding-32 w3-margin-top">
-    <div class="w3-row">
-        <!-- Copyright notice -->
-        <div class="w3-col s6">
-            <div class="w3-margin">
-                <nav class="footer-nav">
-                    <p class="copyright">Copyright &copy; 2020 by Antonius Torode</p>
-                    <p>Powered by a modified <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-                </nav>
-            </div>
-        </div>
-
-        <!-- Links for social media -->
-        <div class="w3-right-align">
-            <nav class="social-nav w3-padding w3-xlarge">
-                <a href="https://www.facebook.com/antonius.torode" class="w3-padding-small fab fa-facebook"></a>
-                <a href="https://twitter.com/awtorode" class="w3-padding-small fab fa-twitter"></a>
-                <a href="https://www.linkedin.com/in/antonius-torode/" class="w3-padding-small fab fa-linkedin"></a>
-                <a href="https://www.youtube.com/channel/UCEnZovSEZd8BsB2_PJrPkEg" class="w3-padding-small fab fa-youtube"></a>
-                <a href="https://www.instagram.com/awtorode/" class="w3-padding-small fab fa-instagram"></a>
-                <a href="https://github.com/GitWebsiteTutorial/GitWebsiteTutorial.github.io" class="w3-padding-small fab fa-github"></a>
-            </nav>
-        </div>
-    </div>
-</footer>
-<!-- ============== END FOOTER - PYTHON ENCODED =============== -->
+<div id="footerSnapshot"></div>
 
 </body>
 </html>

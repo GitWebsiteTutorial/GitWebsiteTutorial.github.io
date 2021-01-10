@@ -6,10 +6,15 @@
 ##################################################################################
 
 # These are the files that the footer will be added to. They must all be html files.
-filenames = ['index', 'helloWorld', 'localGitSetup', 'template']
+filenames = ['index',
+             'articles/introduction'
+             'articles/helloWorld',
+             'articles/localGitSetup',
+             'articles/construction',
+             'articles/createFromTemplate']
 
 # This is the template file containing the footer html.
-templateFileName = 'footer.html'
+templateFileName = 'head-info.html'
 
 # Print the template file being used.
 print('...')
