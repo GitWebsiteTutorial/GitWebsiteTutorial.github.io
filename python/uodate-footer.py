@@ -1,8 +1,8 @@
 ##################################################################################
-# Program: update-head-info.py
+# Program: update-footer.py
 # Author: Antonius Torode
 # Created: 3/11/2019 then modified 1/9/2021
-# Purpose: To update the header in multiple html documents based on a template.
+# Purpose: To update the footer in multiple html documents based on a template.
 ##################################################################################
 
 # These are the files that the footer will be added to. They must all be html files.
@@ -14,7 +14,7 @@ filenames = ['index',
              'articles/createFromTemplate']
 
 # This is the template file containing the footer html.
-templateFileName = 'head-info.html'
+templateFileName = 'footer.html'
 
 # Print the template file being used.
 print('...')
@@ -57,7 +57,7 @@ for filename in filenames:
         if p1:
             file.write(fileline)
         elif p3:
-            if '<!-- ============== END HEAD CONTENT - PYTHON ENCODED =============== -->' in fileline:
+            if '<!-- ============== END FOOTER - PYTHON ENCODED =============== -->' in fileline:
                 p3 = False
                 p4 = True
         elif p2:
@@ -66,7 +66,7 @@ for filename in filenames:
             p3 = True
         elif p4:
             file.write(fileline)
-        elif '<!-- ============== BEGIN HEAD CONTENT - PYTHON ENCODED =============== -->' in fileline:
+        elif '<!-- ============== BEGIN FOOTER - PYTHON ENCODED =============== -->' in fileline:
             p1 = False
             p2 = True
 
