@@ -71,10 +71,127 @@
             <p><i>Written by: <a href="https://torodean.github.io">Antonius Torode</a> - 1/13/2021</i></p>
 
             <h2>The Basics Of HTML (Hyper Text Markup Language)</h2>
-            <p><i><b>Before beginning:</b> I would also recommend some non-distracting music to play in the background. One of my favorites for things like this can be found at this link: <a href="">super cool music</a> (the music changes for each article!).</i></p>
+            <p><i><b>Before beginning:</b> Be sure to get plenty of fresh air throughout the day. If you haven't been outside yet today, take a moment to go outside and walk around in the fresh air. Even if it's cold and snowy out, the fresh air can help rejuvenate you if you've been sitting for longer periods! I would also recommend some non-distracting music to play in the background while working. One of my favorites for things like this can be found at this link: <a href="https://www.youtube.com/watch?v=ZXfBHCbG2o8">super cool chillwave music</a> (the music changes for each article!).</i></p>
+
+            <p>HTML stands for Hyper Text Markup Language, and is the primary language that webpages are written in as it is the industry standard. It describes the structure of a web page and consists of various elements that the web pages are made of. An HTML element tells the web browser how to display the content, which can be displayed differently in different browsers but are generally very similar among the common browsers. Elements are typically defined by a start tag, some content, and then an end tag. Each start tag is defined by something surrounded by left and right braces < > (i.e. &lt;html>) and a close tag will tell the browser when the element ends (i.e. &lt;/html>). What lies between these tags is the content. The element is everything between and including these tags. You can have elements inside of other elements.</p>
+            <p>A great resource that already exists for learning html is the w3schools website. A link to which is below.</p>
+            <ul class="w3-ul w3-hoverable w3-white">
+                <li class="list-item w3-padding-16">
+                    <a href="https://www.w3schools.com/html/html_intro.asp">
+                        <img src="../images/htmlBasics/w3schoolsIcon.png" alt="w3schoolsIcon" class="w3-left w3-margin-right" style="width:100px">
+                        <span class="w3-large"><u>w3schools HTML tutorial</u> - https://www.w3schools.com/html/html_intro.asp</span><br>
+                        <span>W3Schools is a great website that covers various HTML and CSS courses. They also have their own website templates which use a w3.css file. These templates are great for beginners and easy to modify. This website originally started as a template from this page and modified further.</span>
+                    </a>
+                </li>
+            </ul>
+            <p>An html page must be saved with a file name followed by ".html" or ".htm" in order for some web browsers to know how to interpret it. There is a wonderful online editor that allows you to enter html code and view it immediately on the w3schools site found <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">here</a>.</p>
 
             <hr>
-            <h3>HEADER</h3>
+            <h3>Understanding the hello world website</h3>
+            <p>The first website that a beginner designs is typically the "hello world" website. The purpose of the hello world website is a simple page that simply outputs some text, typically the text "hello world". If you have been following these articles, you have already created a website with this format. The typical basic hello world website can be seen <a href="helloWorldExample1.html">here</a> and the code follows as</p>
+            <div class="w3-light-wood w3-padding">
+                <code>
+                    &lt;!DOCTYPE html><br>
+                    &lt;html lang=""><br>
+                    &emsp;&lt;head><br>
+                    &emsp;&emsp;&lt;title> <br>
+                    &emsp;&emsp;&emsp;My Amazing Website! <br>
+                    &emsp;&emsp;&lt;/title><br>
+                    &emsp;&lt;/head><br>
+                    &emsp;&lt;body><br>
+                    &emsp;&emsp;Hello World!<br>
+                    &emsp;&lt;/body><br>
+                    &lt;/html><br>
+                </code>
+            </div>
+            <ul>
+                <li><code class="w3-light-wood">&lt;!DOCTYPE html></code> tells the browser that this document is an HTML5 document.</li>
+                <li><code class="w3-light-wood">&lt;html lang=""></code> is the root element of an HTML page. the "lang" is a property that applies to the html tag, and it's value is set to be empty (the value between the quotation marks). The lang attribute specifies the language of the content that the element contains. In our case, since this website is written in english, we could set this value to "en" for English and thus the line would become <code class="w3-light-wood">&lt;html lang="en"></code>.
+                <li><code class="w3-light-wood">&lt;head></code> contains meta information about the HTML page. This section of the webpage is where the website description, name, title, icons, stylesheets, and more can be included to define the properties of your page.</li>
+                <li><code class="w3-light-wood">&lt;title></code> is the title of the webpage that will appear in the browsers title bar.</li>
+                <li><code class="w3-light-wood">&lt;body></code> is where the body of your web page goes. This is the visible content and information that is displayed to everyone who visits such as text, images, links, etc.</li>
+                <li>The remainder of tags are the end tags to close out the ones listed above.</li>
+            </ul>
+
+            <hr>
+            <h3>HTML tags for your website</h3>
+            <p>As stated earlier, elements are defined by a start tag and an end tag. These are of the form <code class="w3-light-wood">&lt;sometag>Content here...&lt;/sometag></code>. A list of valid html tags can be found at the following w2schools link.</p>
+            <ul class="w3-ul w3-hoverable w3-white">
+                <li class="list-item w3-padding-16">
+                    <a href="https://www.w3schools.com/tags/default.asp">
+                        <img src="../images/htmlBasics/w3schoolsIcon.png" alt="w3schoolsIcon" class="w3-left w3-margin-right" style="width:75px">
+                        <span class="w3-large"><u>w3schools tags reference</u> - https://www.w3schools.com/tags/default.asp</span><br>
+                        <span>W3Schools provides a comprehensive list of html tags with a brief description of what each can be used for.</span>
+                    </a>
+                </li>
+            </ul>
+            <p>When designing an html page, you simply have to use the appropriate tags with the appropriate content to make your website appear as you want it to. You can modify the look and feel of the tags by using tag attributes (discussed in the next section) or using css code (discussed in the next article). Some common elements that are often used (to give you some examples) are the paragraph (<code class="w3-light-wood">&lt;p>&lt;/p></code>), header tags (<code class="w3-light-wood">&lt;h1>&lt;/h1>, &lt;h2>&lt;/h2>, ..., &lt;h6>&lt;/h6></code>), and hyperlinks (<code class="w3-light-wood">&lt;a>&lt;/a></code>). The paragraph tag simply defines a paragraph of text. The header tags define different sized headers. On a simple level, the hyperlink element is slightly different than the other two mentioned here in the sense that it needs a parameter (what it will be a link to). To define what the hyperlink will link to we use something called a tag attribute. A tag attribute is included within the brackets of the open tag of an element. For our hyperlink, it has the option to include a link URL/reference using hte "href" attribute. If we wanted to link to the DuckDuckGo we would have our starting tag as <code class="w3-light-wood">&lt;a href="https://duckduckgo.com">DuckDuckGo&lt;/a></code>. Attributes for tags will be discussed in the next section. If we add the three tags mentioned to our hello world website, we have the following code (which can be viewed as a web page <a href="helloWorldExample2.html">here</a>). </p>
+            <div class="w3-light-wood w3-padding">
+                <code>
+                    &lt;!DOCTYPE html><br>
+                    &lt;html lang=""><br>
+                    &emsp;&lt;head><br>
+                    &emsp;&emsp;&lt;title> <br>
+                    &emsp;&emsp;&emsp;My Amazing Website! <br>
+                    &emsp;&emsp;&lt;/title><br>
+                    &emsp;&lt;/head><br>
+                    &emsp;&lt;body><br>
+                    &emsp;&emsp;&lt;h1><br>
+                    &emsp;&emsp;&emsp;This is a header!<br>
+                    &emsp;&emsp;&lt;/h1><br>
+                    &emsp;&emsp;&lt;p><br>
+                    &emsp;&emsp;&emsp;This is a paragraph of text! Here's a link to &lt;a href="https://duckduckgo.com">DuckDuckGo&lt;/a><br>
+                    &emsp;&emsp;&lt;/p><br>
+                    &emsp;&lt;/body><br>
+                    &lt;/html><br>
+                </code>
+            </div>
+
+            <hr>
+            <h3>HTML tag attributes</h3>
+            <p>The html tags all have attributes that can define how the tags will behave different from their default behavior. The attributes provide additional information for the tags and are always specified in the start tag. Attributes typically have a name and a value and are defined by <code class="w3-light-wood">name="value"</code>. We've already covered this when discussing the hyperlink example above. Another very common usage of this goes along with the <code class="w3-light-wood">&lt;div></code> tag. The div tag represents a section in a document. This is most often used with the style attribute or the class attribute. The class attribute can import various custom styles defined in a css file (which will be discussed in the next article). The style attribute is essentially the same thing except rather than defining the styles in a css file, they are defined inline. The style tag can define things such as color, alignment, font size, etc. If multiple values are given to the style attribute, we can separate them by use of a semi-colon. For example, if we wanted to make a section that was blue with centered text, we could wrap it with <code class="w3-light-wood">&lt;div style="color:blue;text-align:center">Content here...&lt;/div></code>, which would look as follows:</p>
+            <div style="color:blue;text-align:center">Content here...</div>
+            <p>This is just one example of how attributes can be used, and there are many more that can be used to make your website look and feel how you want it to. For a comprehensive list of attributes, you can view the w3schools link below.</p>
+            <ul class="w3-ul w3-hoverable w3-white">
+                <li class="list-item w3-padding-16">
+                    <a href="https://www.w3schools.com/tags/ref_attributes.asp">
+                        <img src="../images/htmlBasics/w3schoolsIcon.png" alt="w3schoolsIcon" class="w3-left w3-margin-right" style="width:75px">
+                        <span class="w3-large"><u>w3schools attribute reference</u> - https://www.w3schools.com/tags/ref_attributes.asp</span><br>
+                        <span>W3Schools provides a comprehensive list of html references with a brief description of what each can be used for.</span>
+                    </a>
+                </li>
+            </ul>
+
+            <hr>
+            <h3>Tips for editing your webpage</h3>
+            <p>Editing web pages can potentially be overwhelming at first. There is a lot of new concepts to someone who has never done programming related things before. Here are just a few tips for keeping organized and maintaining productive workflow.</p>
+            <ul>
+                <li><b>Comment your code</b> as you work! An html comment is something that is written in the code but is only there to help you understand and organize the code, it does not effect how hte web browser interprets the web page. A comment has a start and end tag just like any other html element, which are defined by <code class="w3-light-wood">&lt;!-- Content of comment goes here --></code>. Comments help you remember what different sections of your code do or organize where sections begin and end. If we were to add some comments to our basic hello world program, we could do something like the following, which would not change the webpage display at all.
+                    <div class="w3-light-wood w3-padding">
+                        <code>
+                            &lt;!DOCTYPE html><br>
+                            &lt;html lang=""><br>
+                            &emsp;&lt;!-- BEGIN HEAD SECTION --><br>
+                            &emsp;&lt;head><br>
+                            &emsp;&emsp;&lt;title> <br>
+                            &emsp;&emsp;&emsp;My Amazing Website! <br>
+                            &emsp;&emsp;&lt;/title><br>
+                            &emsp;&lt;/head><br>
+                            &emsp;&lt;!-- END HEAD SECTION --><br>
+                            &emsp;&lt;!-- BEGIN BODY SECTION --><br>
+                            &emsp;&lt;body><br>
+                            &emsp;&emsp;Hello World!<br>
+                            &emsp;&lt;/body><br>
+                            &emsp;&lt;!-- END BODY SECTION --><br>
+                            &lt;/html><br>
+                        </code>
+                    </div>
+                    For an example like this it may not seem very helpful to have comments, but when wep pages become much larger, comments will help a lot!
+                </li>
+                <li>If you're using a browser like Firefox or Google Chrome, you can right click on any web page and view the html source code. To do this, you simply right click the page and hit "View Page Source". This is a great way to see the code that makes up the pages you are looking at if you're curious.</li>
+                <li>If you have the luxury of having multiple computer monitors. Try to keep your code on one, and keep a display of your webpage on another. That way as you make changes to the code, you can simply refresh the web page and see what they look like! If you only have one monitor, you should still keep a browser open with your page and you can easily swap between the two using ALT+TAB.</li>
+                <li>View your website in multiple browsers! Often times, a website can appear differently in various browsers. As the style gets more advanced, it is a good idea to open your website in various browsers as you may realize something needs changed for one or more. This has been a historic issue with Internet Explorer (often regarded as the worst web browser), as it would display web pages very differently than Google Chrome or Firefox (two popular web browsers).</li>
+            </ul>
 
             <!-- END ARTICLE -->
 
