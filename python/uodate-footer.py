@@ -56,17 +56,17 @@ for filename in filenames:
     for fileline in fileLines:
         if p1:
             file.write(fileline)
-        elif p3:
+        if p3:
             if '<!-- ============== END FOOTER - PYTHON ENCODED =============== -->' in fileline:
                 p3 = False
                 p4 = True
-        elif p2:
+        if p2:
             file.write(templateText)
             p2 = False
             p3 = True
-        elif p4:
+        if p4:
             file.write(fileline)
-        elif '<!-- ============== BEGIN FOOTER - PYTHON ENCODED =============== -->' in fileline:
+        if '<!-- ============== BEGIN FOOTER - PYTHON ENCODED =============== -->' in fileline:
             p1 = False
             p2 = True
 

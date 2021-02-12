@@ -203,3 +203,11 @@
     text-decoration: none;
     display: block;
 }
+
+p {
+    text-align: left;
+}
+
+.blueBackground {
+    background-color: lightblue;
+}

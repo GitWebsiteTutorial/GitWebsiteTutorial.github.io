@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Git Website Tutorial</title>
+    <meta name="description" content="A github.io website tutorial.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="github.io, github, git, website, tutorial, css, html, beginner, Antonius, Torode">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="../site.webmanifest">
+    <!-- Favicon information -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="css/vendors/bootstrap/bootstrap.min.css">-->
+
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../fonts/raleway.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Raleway", sans-serif
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey background-image">
+
+<div class="w3-content" style="max-width:1400px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+        <h1><b>Git (github.io) Website Tutorial</b></h1>
+    </header>
+
+    <a href="htmlBasics.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">« Previous</button></a>
+    <a href="../index.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Return Home</button></a>
+    <a href=""><button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-disabled">Next »</button></a>
+    <hr>
+
+    <!-- Grid -->
+    <div class="w3-row w3-white w3-transparent">
+        <div class="w3-container">
+            <!-- START ARTICLE -->
+
+            <h1><u>Git Website Tutorial  - CSS Basics</u></h1>
+            <p><i>Written by: <a href="https://torodean.github.io">Antonius Torode</a> - 2/11/2021</i></p>
+
+            <h2>The Basics of CSS (Cascading Style Sheet)</h2>
+            <p><i><b>Before beginning:</b> It's hard to stay focused now a day with all the available distractions that come with modern day technology. Some non-distracting music in the background can be a great tool to keep your mind focused! One of my favorites for things like this can be found at this link: <a href="https://www.youtube.com/watch?v=0uhwPOquByE">amazing coding music</a> (the music changes for each article!).</i></p>
+            <p>CSS stands for Cascading Style Sheet. CSS defines how HTML elements are stylized and appear on a screen when they are being viewed. It is important to understand how to use CSS because it saves a lot of work by synchronizing various styles across multiple web pages and allowing you to quickly adjust styles for all elements of as similar type without individually editing them. The CSS definitions are always stored in an external CSS file. These are files that end in ".css" and are often contained in a "css" or "stylesheet" folder in your project directory.</p>
+            <p>A great resource that already exists for learning CSS is the w3schools website. A link to which is below.</p>
+            <ul class="w3-ul w3-hoverable w3-white">
+                <li class="list-item w3-padding-16">
+                    <a href="https://www.w3schools.com/css/default.asp">
+                        <img src="../images/htmlBasics/w3schoolsIcon.png" alt="w3schoolsIcon" class="w3-left w3-margin-right" style="width:100px">
+                        <span class="w3-large"><u>w3schools CSS tutorial</u> - https://www.w3schools.com/css/default.asp</span><br>
+                        <span>W3Schools is a great website that covers various HTML and CSS courses. They also have their own website templates which use a w3.css file. These templates are great for beginners and easy to modify. This website originally started as a template from this page and modified further.</span>
+                    </a>
+                </li>
+            </ul>
+
+            <hr>
+            <h3>How to add a CSS stylesheet to your HTML file</h3>
+            <p>The first step to using a CSS stylesheet is to include the CSS file in your HTML file. This is done within the <code class="w3-light-wood">&lt;head></code> element of the HTML page with the <code class="w3-light-wood">&lt;link></code> element. For example, suppose we have a stylesheet named "main.css" located in a "css" folder. To include our stylesheet, we simple need to add <code class="w3-light-wood">&lt;link rel="stylesheet" href="css/main.css"></code> to the html head element. To see this in the hello world example, we would have</p>
+            <div class="w3-light-wood w3-padding">
+                <code>
+                    &lt;!DOCTYPE html><br>
+                    &lt;html lang="en-US"><br>
+                    &emsp;&lt;head><br>
+                    &emsp;&emsp;&lt;title> <br>
+                    &emsp;&emsp;&emsp;Hola World Website!<br>
+                    &emsp;&emsp;&lt;/title><br>
+                    &emsp;&emsp;&lt;link rel="stylesheet" href="css/main.css"><br>
+                    &emsp;&lt;/head><br>
+                    &emsp;&lt;body><br>
+                    &emsp;&emsp;Hey yo wassup world!<br>
+                    &emsp;&lt;/body><br>
+                    &lt;/html><br>
+                </code>
+            </div>
+            <p>Once the stylesheet is added to an html file, all of the definitions within it will be applied to the html elements of that file!</p>
+
+            <hr>
+            <h3>Writing some basic CSS</h3>
+            <p>Now that you know how to add a stylesheet to your html document, let's look at how to write a css file. A css file is essentially a collection of rules that determine how each element of html should be displayed and modified. These are called <i>rule-sets</i>. Each rule set has a <i>selector</i> (which determines which html element will be modified) and a <i>declaration block</i> (which defines how the html element will be modified). The declaration block is defined by the contents within two curly brackets. The <i>declaration block</i> can contain multiple <i>declarations</i>, which are essentially just single changes, composed of a css property name and a value. Each <i>declaration</i> in the <i>declaration block</i> have to be separated by a semicolon. As an example, if we wanted to modify the <code>h1</code> element so that it was blue with a font size of 12, we would have h1 as our <i>selector</i>, and two <i>declarations</i> (one to change the color to blue, and one to change the size to 12). You can see this in the image below which is taken from the W3Schools page linked to above.</p>
+
+            <img src="../images/cssBasics/selector.jpg" alt="selector">
+            <p>In our css file, we would write this just as it is written above.</p>
+            <div class="w3-light-wood w3-padding">
+                <code>
+                    h1 { ;color: blue; font-size: 12px; }
+                </code>
+            </div>
+            <p>We can also modify how the text above is formatted and the css will function the same way. Tabs and spaces are ignored in css files when it uses what you have written. However, semicolons, curly brackets, colons, etc are very important. Just like in html, css also has a way of including comments. This is done by inserting your text between /* and */ (/* this would be a comment */). My preferred way of formatting my <i>selectors</i> and <i>declaration blocks</i> look as follows (with another example as well).</p>
+            <div class="w3-light-wood w3-padding">
+                <code>
+                    h1 {<br>
+                    &emsp;color: blue;<br>
+                    &emsp;font-size: 12px;<br>
+                    }<br>
+                    /* This is a comment. Very cool indeed. */<br><br>
+                    p {<br>
+                    &emsp; text-align: left;<br>
+                    }<br>
+                    /* The above rule-set will make all paragraphs (using<br>
+                    the &lt;p> element) display left aligned text. <br>
+                    Oh look at that, comments can be on multiple lines!*/<br>
+                </code>
+            </div>
+            <p>You can also define css styles within the html file itself rather than making a css file. Generally this is not used, but if you wanted to do so you would do it like so.</p>
+            <div class="w3-light-wood w3-padding">
+                <code>                    &lt;!DOCTYPE html><br>
+                    &lt;html lang="en-US"><br>
+                    &emsp;&lt;head><br>
+                    &emsp;&emsp;&lt;title> <br>
+                    &emsp;&emsp;&emsp;Hola World Website!<br>
+                    &emsp;&emsp;&lt;/title><br>
+                    &emsp;&emsp;&lt;style><br>
+                    &emsp;&emsp;h1 { color: blue; font-size: 12px; }<br>
+                    &emsp;&emsp;p { text-align: left; }<br>
+                    &emsp;&emsp;&lt;/style><br>
+                    &emsp;&lt;/head><br>
+                    &emsp;&lt;body><br>
+                    &emsp;&emsp;&lt;h1>A Blue Header!&lt;/h1><br>
+                    &emsp;&emsp;&lt;p>Hello darkness my old left-aligned world!&lt;/p><br>
+                    &emsp;&lt;/body><br>
+                    &lt;/html><br>
+                </code>
+            </div>
+            <p>Multiple stylesheets can be used on any html page! If you define more than one stylesheet and they both contain the same selector,  the value from the last read style sheet will be used.</p>
+
+            <hr>
+            <h3>Types of Selectors And Declarations</h3>
+            <p>To get some more information on the various types of selectors, you can read about them at the following link (why bother typing it all out when I can just link you to an already nicely written description). </p>
+            <ul class="w3-ul w3-hoverable w3-white">
+                <li class="list-item w3-padding-16">
+                    <a href="https://www.w3schools.com/css/default.asp">
+                        <img src="../images/htmlBasics/w3schoolsIcon.png" alt="w3schoolsIcon" class="w3-left w3-margin-right" style="width:100px">
+                        <span class="w3-large"><u>w3schools CSS Selectors</u> - https://www.w3schools.com/css/css_selectors.asp</span><br>
+                        <span>W3Schools has a page discussing selectors and the various types of selectors. This is a great resource to learn about the different options you have and what you can apply css to within your html page!</span>
+                    </a>
+                </li>
+            </ul>
+            <p>At that same link above, you can learn about all of the various css declarations, properties, and values that you can use to define your rule-sets. If you open the link above, you can select the various sub-categories to learn about them via the panel on the left side. This has tons of various things you can do all to spice up your css and webpages!</p>
+
+            <hr>
+            <h3>The &lt;div> Element and Classes</h3>
+            <p>The &lt;div> element is a simple yet powerful html element that can be utilized to improve any website. The &lt;div> element is essentially a blank container that you can apply css styles to. A neat tool you can utilize is built right into Firefox and Google chrome that lets you view the various elements that make up a web page. If you right click any webpage, you can select "inspect" ("Inspect Element" if you are using Firefox). A window will appear with the html code for that webpage. You can then hover over the elements of the html and it will outline where they are on the page. This is a great tool for beginners to get an idea of what the &lt;div> elements (and other elements) appear as on the web page. An example can be seen in the image below. You can see that by hovering over the &lt;div> element, the div surrounding the tags section is outlined in light blue.</p>
+            <img src="../images/cssBasics/inspectElement.jpg" alt="inspectElement">
+            <p>How is the &lt;div> useful to you? When combined with css classes, the div containers can be powerful. A class is essentially a custom defined <i>selector</i> with whatever <i>declarations</i> you want it to have. You can give it any name. They are defined in the css the same way as the previous selectors we've talked about, only preceded by a dot. For example, if I wanted to make a class named "blueBackground" with a background color of light blue, I could add the following to my css file.</p>
+            <div class="w3-padding blueBackground">
+                <code>
+                    .blueBackground {<br>
+                    &emsp;background-color: lightblue<br>
+                    }<br>
+                </code>
+            </div>
+            <p>To apply this css class to a div element (as you can see I have done above), you simple add the class attribute to the div container. This would be done using <code class="w3-light-wood">&lt;div class="blueBackground"> My stuff here &lt;/div></code>. In this case, anything within the &lt;div> tag would have our blueBackground class applied to it. As an exercise, why not try using the inspect element feature of the browser to find the &lt;div> element that makes that box above blue! You can define classes however you like, and apply multiple classes to a &lt;div> element. Say we have three classes defined in our css file, "firstGrade", "secondGrade", and "thirdGrade". If we wanted to apply all three to a &lt;div> element we would do so with <code class="w3-light-wood">&lt;div class="firstGrade secondGrade thirdGrade"> Stuff here &lt;/div></code>.</p>
+            <p>That's it! That's the basics of using css. You can combine all the skills you've learned with one another to make various webpages. Creativity and a bit of googling is often all else it takes. The articles after this one will cover more focused topics, such as how to do specific looks, or set up specific tools for improving workflow!</p>
+
+            <!-- END ARTICLE -->
+
+        </div>
+        <!-- END CONTAINER -->
+
+    </div>
+    <!-- END GRID -->
+
+    <hr>
+    <a href="htmlBasics.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">« Previous</button></a>
+    <a href="../index.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Return Home</button></a>
+    <a href=""><button class="w3-button w3-black w3-padding-large w3-margin-bottom w3-disabled">Next »</button></a>
+    <!-- END w3-content -->
+</div>
+
+
+<!-- ============== BEGIN FOOTER - PYTHON ENCODED =============== -->
+<footer class="w3-container w3-light-wood w3-padding-32 w3-margin-top">
+    <div class="w3-row">
+        <!-- Copyright notice -->
+        <div class="w3-col s6">
+            <div class="w3-margin">
+                <nav class="footer-nav">
+                    <p class="copyright">Copyright &copy; 2020 by Antonius Torode</p>
+                    <p>Powered by a modified <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Links for social media -->
+        <div class="w3-right-align">
+            <nav class="social-nav w3-padding w3-xlarge">
+                <a href="https://www.facebook.com/antonius.torode" class="w3-padding-small fab fa-facebook"></a>
+                <a href="https://twitter.com/awtorode" class="w3-padding-small fab fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/antonius-torode/" class="w3-padding-small fab fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCEnZovSEZd8BsB2_PJrPkEg" class="w3-padding-small fab fa-youtube"></a>
+                <a href="https://www.instagram.com/awtorode/" class="w3-padding-small fab fa-instagram"></a>
+                <a href="https://github.com/GitWebsiteTutorial/GitWebsiteTutorial.github.io" class="w3-padding-small fab fa-github"></a>
+            </nav>
+        </div>
+    </div>
+</footer>
+<!-- ============== END FO
