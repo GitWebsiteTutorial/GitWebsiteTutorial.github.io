@@ -211,3 +211,7 @@ p {
 .blueBackground {
     background-color: lightblue;
 }
+
+.content-article {
+    padding: 16px 8px;
+}
